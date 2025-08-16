@@ -1,0 +1,30 @@
+name: Deployment
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3   # 1. Download repo
+      - uses: ruby/setup-ruby@v1    # 2. Install Ruby for Jekyll
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - uses: actions/setup-node@v3 # 3. Install Node for Tailwind
+        with:
+          node-version: '18'
+
+      - run: bundle install          # 4a. Install Ruby dependencies
+      - run: npm install             # 4b. Install Node dependencies
+
+      - run: npx tailwindcss -i ./assets/css/style.css -o ./assets/css/main.css --minify   # 5. Build Tailwind
+      - run: bundle exec jekyll build --baseurl ""                                       # 6. Build Jekyll
+
+      - uses: peaceiris/actions-gh-pages@v3   # 7. Deploy to GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
