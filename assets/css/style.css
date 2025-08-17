@@ -1,1 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --color-fern-green: #587042;
+    --color-sage: #A9B494;
+    --color-cosmic-latte: #FAF7E6;
+    --color-jasmine: #F8DE8C;
+    --color-saffron: #F6C531;
+    --font-pixelify-sans: "Pixelify Sans", sans-serif;
+    --font-lato: "Lato", sans-serif;
+}
+
+.typewriter {
+  overflow: hidden;                 /* Ensures text doesn't wrap */
+  white-space: nowrap;              /* Keep text on one line */
+  border-right: 0.1em solid #587042; /* cursor effect */
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
