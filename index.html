@@ -1,88 +1,66 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Home</title>
-  </head>
-  <body class="flex flex-col min-h-screen">
-    <nav class="bg-fern-green h-16 flex items-center justify-around px-8">
-      <a href="#" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">ABOUT ME</a>
-      <a href="#" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-300 text-center">PERSONAL PROJECTS</a>
-      <a href="#" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">FAVOURITE THINGS</a>
-    </nav>
+---
+layout: default
+---
 
-    <main class="bg-cosmic-latte flex-1 flex flex-col w-full">
-       
-      <div class="aspect-square w-80 mx-auto mt-8">
-        <img src="./assets/images/me.gif" alt="just me" class="object-cover w-full h-full drop-shadow-lg">
-      </div>
+<div class="aspect-square w-80 mx-auto mt-8">
+  <img src="./assets/images/me.gif" alt="just me" class="object-cover w-full h-full drop-shadow-lg">
+</div>
 
-      <div class="mx-auto">
-        <h1 class="mt-8 text-6xl sm:text-7xl lg:text-5xl text-fern-green text-center font-pixelify-sans drop-shadow-lg typewriter">
-          Hi, I'm Gabriele.
-        </h1>
-      </div>
+<div class="mx-auto">
+  <h1 class="mt-8 text-6xl sm:text-7xl lg:text-5xl text-fern-green text-center font-pixelify-sans drop-shadow-lg typewriter">
+    Hi, I'm Gabriele.
+  </h1>
+</div>
 
-      <div class="mt-8 flex flex-row gap-20 w-full h-100 p-8">
-        
-        <!-- ABOUT ME -->
-        <div class="flex-1">
-          <h1 class="font-pixelify-sans text-4xl text-fern-green drop-shadow-2xl">About me</h1>
-          <div class="pt-5 pr-20 border-t-2 border-fern-green text-md text-black drop-shadow-2xl font-lato leading-relaxed">
-            <p class="tracking-wide">
-              I'm a computer science graduate student based in Turin, Italy. 
-              I'm currently working on my bachelor's thesis and, alongside that, I often enjoy coming up with side projects to learn new things.
-            </p><br>
-            <p class="tracking-wide">
-              As of now, I'm learning the modern Vulkan API by developing a C++ framework that supports
-              both the standard rasterization and raytracing pipeline, which I plan to use as a starting point for future projects.
-              I have a particular interest in the field of computer graphics, which makes up most of my computer science projects.
-            </p><br>
-            <p class="tracking-wide">Outside of computer science I enjoy studying film, learning Japanese and Danish, making music and improving my photography — whenever I can find the time.</p>
-          </div>
-        </div>
+<div class="mt-8 flex flex-row gap-20 w-full h-100 p-8">
+  
+  <!-- ABOUT ME -->
+  <div class="flex-1">
+    <h1 class="font-pixelify-sans text-4xl text-fern-green drop-shadow-2xl">About me</h1>
+    <div class="pt-5 pr-20 border-t-2 border-fern-green text-md text-black drop-shadow-2xl font-lato leading-relaxed">
+      <p class="tracking-wide">
+        I'm a computer science graduate student based in Turin, Italy. 
+        I'm currently working on my bachelor's thesis and, alongside that, I often enjoy coming up with side projects to learn new things.
+      </p><br>
+      <p class="tracking-wide">
+        As of now, I'm learning the modern Vulkan API by developing a C++ framework that supports
+        both the standard rasterization and raytracing pipeline, which I plan to use as a starting point for future projects.
+        I have a particular interest in the field of computer graphics, which makes up most of my computer science projects.
+      </p><br>
+      <p class="tracking-wide">Outside of computer science I enjoy studying film, learning Japanese and Danish, making music and improving my photography — whenever I can find the time.</p>
+    </div>
+  </div>
 
-        <!-- RESUME -->
-        <div class="flex-1 text-right">
-          <h1 class="font-pixelify-sans text-4xl text-fern-green drop-shadow-2xl">Résumé</h1>
-          <div class="pt-5 pl-20 border-t-2 border-fern-green text-lg text-black drop-shadow-2xl font-lato">
+  <!-- RESUME -->
+  <div class="flex-1 text-right">
+    <h1 class="font-pixelify-sans text-4xl text-fern-green drop-shadow-2xl">Résumé</h1>
+    <div class="pt-5 pl-20 border-t-2 border-fern-green text-lg text-black drop-shadow-2xl font-lato">
+      
+      <!-- Bachelor -->
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-fern-green font-pixelify-sans">
+          University of Turin
+        </h2>
+        <p class="text-sm text-gray-800">B.Sc. in Computer Science, 2021 - 2024</p>
+          <!-- 
+          <p class="text-sm text-black mt-1">
             
-            <!-- Bachelor -->
-            <div class="mb-6">
-              <h2 class="text-xl font-semibold text-fern-green font-pixelify-sans">
-                University of Turin
-              </h2>
-              <p class="text-sm text-gray-800">B.Sc. in Computer Science, 2021 - 2024</p>
-                <!-- 
-                <p class="text-sm text-black mt-1">
-                  
-                </p>
-                -->
-            </div>
-
-            <!-- Master -->
-            <div>
-              <h2 class="text-xl font-semibold text-fern-green font-pixelify-sans">
-                University of Turin
-              </h2>
-              <p class="text-sm text-gray-800">(ongoing) M.Sc. in Computer Science, 2024 - 2026</p>
-                <p class="text-sm text-black mt-1">
-                  I helped translating the Computer Graphics course slides from Italian to English as a part-time job.
-                </p> 
-            </div>
-
-          </div>
-        </div>
-
+          </p>
+          -->
       </div>
 
-    </main>
+      <!-- Master -->
+      <div>
+        <h2 class="text-xl font-semibold text-fern-green font-pixelify-sans">
+          University of Turin
+        </h2>
+        <p class="text-sm text-gray-800">(ongoing) M.Sc. in Computer Science, 2024 - 2026</p>
+          <p class="text-sm text-black mt-1">
+            I helped translating the Computer Graphics course slides from Italian to English as a part-time job.
+          </p> 
+      </div>
 
-    <footer class="bg-fern-green h-12 flex items-center justify-center">
-      <a href="mailto:g.novello1006@gmail.com" class="font-lato font-semibold text-lg text-cosmic-latte hover:underline">
-        CONTACTS
-      </a>
-    </footer>
-  </body>
-</html>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>{{ page.title | default: "About Me"}}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-fern-green h-16 flex items-center justify-around px-8">
+      <a href="index.html" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">ABOUT ME</a>
+      <a href="projects.html" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-300 text-center">PERSONAL PROJECTS</a>
+      <a href="things.html" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">FAVOURITE THINGS</a>
+    </nav>
+
+    <main class="bg-cosmic-latte flex-1 flex flex-col w-full">
+        {{ content }}
+    </main>
+
+    <footer class="bg-fern-green h-12 flex items-center justify-center font-lato text-cosmic-latte">
+        <span>© {{ "now" | date: "%Y" }} Gabriele Novello</span>
+        <span class="mx-4">|</span>
+        <a href="mailto:g.novello1006@gmail.com" class="font-semibold text-lg hover:underline">
+            CONTACTS
+        </a>
+    </footer>
+  </body>
+</html>
