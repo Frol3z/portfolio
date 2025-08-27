@@ -3,4 +3,25 @@ layout: default
 title: Personal Projects
 ---
 
-<p class="mx-auto text-center">:)</p>
+<!-- CARD TEMPLATE -->
+<!-- Move mt-8 once I decide the layout of the rest of the page -->
+<div class="flex w-4xl h-full bg-fern-green mx-auto p-5 mt-8 gap-5 rounded-md drop-shadow-lg">
+    <!-- Left column -->
+    <div class="flex flex-col flex-1">
+        <!-- Project title -->
+        <div class="flex flex-2 flex-col justify-center">
+            <h1 class="font-asimovian text-9xl text-cosmic-latte drop-shadow-2xl text-center tracking-widest">ZEUS</h1>
+        </div>
+        <!-- Project description -->
+        <div class="flex flex-1 flex-col justify-end">
+            <p class="font-source-code-pro text-md leading-relaxed tracking-wider text-cosmic-latte drop-shadow-2xl text-right p-3 border-t-1">
+                Zeus is a Python plugin for Autodesk Maya 2025 to make handling clouds, rain, wind and other atmospheric phenomena easier.
+            </p>
+        </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="flex-1">
+        <img src="./assets/images/aerial_shot.gif" alt="Clouds Traversal" class="mx-auto w-full h-full rounded drop-shadow-4xl">
+    </div>
+</div>
