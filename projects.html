@@ -7,19 +7,40 @@
   </head>
   <body class="flex flex-col min-h-screen">
     <nav class="bg-fern-green h-16 flex items-center justify-around px-8">
-      <a href="/portfolio" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">ABOUT ME</a>
-      <a href="projects" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-300 text-center">PERSONAL PROJECTS</a>
-      <a href="things" class="text-cosmic-latte font-lato font-semibold text-lg hover:underline w-50 text-center">FAVOURITE THINGS</a>
+      <a href="/portfolio" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">ABOUT ME</a>
+      <a href="projects" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">PERSONAL PROJECTS</a>
+      <a href="things" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">FAVOURITE THINGS</a>
     </nav>
 
     <main class="bg-cosmic-latte flex-1 flex flex-col w-full">
-        <p class="mx-auto text-center">:)</p>
+        <!-- CARD TEMPLATE -->
+<!-- Move mt-8 once I decide the layout of the rest of the page -->
+<div class="flex w-4xl h-full bg-fern-green mx-auto p-5 mt-8 gap-5 rounded-md drop-shadow-lg">
+    <!-- Left column -->
+    <div class="flex flex-col flex-1">
+        <!-- Project title -->
+        <div class="flex flex-2 flex-col justify-center">
+            <h1 class="font-asimovian text-9xl text-cosmic-latte drop-shadow-2xl text-center tracking-widest">ZEUS</h1>
+        </div>
+        <!-- Project description -->
+        <div class="flex flex-1 flex-col justify-end">
+            <p class="font-source-code-pro text-md leading-relaxed tracking-wider text-cosmic-latte drop-shadow-2xl text-right p-3 border-t-1">
+                Zeus is a Python plugin for Autodesk Maya 2025 to make handling clouds, rain, wind and other atmospheric phenomena easier.
+            </p>
+        </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="flex-1">
+        <img src="./assets/images/aerial_shot.gif" alt="Clouds Traversal" class="mx-auto w-full h-full rounded drop-shadow-4xl">
+    </div>
+</div>
     </main>
 
-    <footer class="bg-fern-green h-12 flex items-center justify-center font-lato text-cosmic-latte">
+    <footer class="bg-fern-green h-12 flex items-center justify-center font-source-code-pro text-cosmic-latte">
         <span>© 2025 Gabriele Novello</span>
         <span class="mx-4">|</span>
-        <a href="mailto:g.novello1006@gmail.com" class="font-semibold text-lg hover:underline">
+        <a href="mailto:g.novello1006@gmail.com" class="font-semibold tracking-wider hover:underline">
             CONTACTS
         </a>
     </footer>
