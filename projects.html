@@ -3,25 +3,111 @@ layout: default
 title: Personal Projects
 ---
 
-<!-- CARD TEMPLATE -->
-<!-- Move mt-8 once I decide the layout of the rest of the page -->
-<div class="flex w-4xl h-full bg-fern-green mx-auto p-5 mt-8 gap-5 rounded-md drop-shadow-lg">
-    <!-- Left column -->
-    <div class="flex flex-col flex-1">
-        <!-- Project title -->
-        <div class="flex flex-2 flex-col justify-center">
-            <h1 class="font-asimovian text-9xl text-cosmic-latte drop-shadow-2xl text-center tracking-widest">ZEUS</h1>
-        </div>
-        <!-- Project description -->
-        <div class="flex flex-1 flex-col justify-end">
-            <p class="font-source-code-pro text-md leading-relaxed tracking-wider text-cosmic-latte drop-shadow-2xl text-right p-3 border-t-1">
-                Zeus is a Python plugin for Autodesk Maya 2025 to make handling clouds, rain, wind and other atmospheric phenomena easier.
-            </p>
-        </div>
-    </div>
+<!-- Vulkan Raytracer -->
+{%  include project-card.html
+    title="Vulkan framework"
+    titleSize="text-4xl"
+    desc="After gaining familiarity with Vulkan through a couple of small projects and being motivated by a friend, I decided to go for a big one once again.
+        This is a Vulkan framework I'm currently working on, which will support both the default and
+        raytracing rendering pipelines, as well as external model loading and a simple user interface. Thus, a mini game engine. I plan to use it as a starting point
+        for future projects on more specific CG-related topics.
+        "
+    year="2025-(ongoing)"
+    link="https://github.com/Frol3z/Raytracer"
+    linkText="Repo"
+    imgSrc=""
+    imgAlt=""
+%}
 
-    <!-- Right column -->
-    <div class="flex-1">
-        <img src="./assets/images/aerial_shot.gif" alt="Clouds Traversal" class="mx-auto w-full h-full rounded drop-shadow-4xl">
-    </div>
-</div>
+<!-- Monte Carlo Denoiser -->
+{%  include project-card-mirrored.html
+    title="Monte Carlo Denoiser"
+    titleSize="text-6xl"
+    desc="Small project exploring the usage of Deep Learning techniques to apply denoising to Monte Carlo renderings. This was done by training a residual neural network
+        (ResNet) on Disney's Monte Carlo denoising dataset following a couple of papers (see References in the report). It is a really basic project with a lot of margin for
+        improvement, both in performance and denoising quality. Still, I find the results worthwile."
+    year="2025"
+    link="https://drive.google.com/drive/folders/1qxleRi7_MjluKgxfQ8okzzrJbgF0qCqb?usp=sharing"
+    linkText="Report"
+    imgSrc="./assets/images/montecarlo_denoiser.jpg"
+    imgAlt="Renderer screenshot"
+%}
+
+<!-- Chrono Gnomes Trailer -->
+{%  include project-card.html
+    title="Chrono Gnomes Trailer"
+    titleSize="text-6xl"
+    desc="Trailer for the video game Chrono Gnomes, storyboarded by my friend Yun Qing Zhou and edited by me. <br><br>It was fun :)"
+    year="2025"
+    link="https://www.youtube.com/watch?v=gm_bi6pKQ6E&ab_channel=NewGameDesigner-Universit%C3%A0diMilano"
+    linkText="YouTube"
+    overrideMedia="true"
+    overrideBody="
+        <iframe 
+            width=\"560\" 
+            height=\"315\" 
+            src=\"https://www.youtube.com/embed/gm_bi6pKQ6E\" 
+            title=\"Chrono Gnomes Trailer\" 
+            frameborder=\"0\"
+            allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" 
+            allowfullscreen>
+        </iframe>
+    "
+%}
+
+<!-- Zeus -->
+{%  include project-card-mirrored.html
+    title="ZEUS"
+    titleSize="text-9xl"
+    desc="Zeus is a Python plugin for Autodesk Maya 2025 to make handling clouds, rain, wind and other atmospheric phenomena easier."
+    year="2025"
+    link="https://github.com/Frol3z/Zeus"
+    linkText="Repo"
+    imgSrc="./assets/images/aerial_shot.gif"
+    imgAlt="Cloud Traversal"
+%}
+
+<!-- PySynth -->
+<!-- TODO: add audio -->
+{%  include project-card.html
+    title="PySynth"
+    titleSize="text-6xl"
+    desc="PySynth is a real-time playable polyphonic additive synthesizer I made with Python to apply stuff I learned during a DSP course."
+    year="2025"
+    link="https://github.com/Frol3z/PySynth"
+    linkText="Repo"
+    overrideMedia="true"
+    overrideBody="
+        <div class=\"flex flex-col gap-5\">
+            <audio src=\"./assets/audio/pysynth_ex1.mp4\" controls></audio>
+            <audio src=\"./assets/audio/pysynth_ex2.mp4\" controls></audio>
+            <audio src=\"./assets/audio/pysynth_ex3.mp4\" controls></audio>
+        </div>
+    "
+%}
+
+<!-- Hoarde -->
+{%  include project-card-mirrored.html
+    title="HOARDE"
+    titleSize="text-9xl"
+    desc="Hoarde is a simple roguelite video game I created and developed using Godot. It was the subject of my bachelor's thesis on saving game states."
+    year="2024"
+    imgSrc="./assets/images/hoarde_gameplay.gif"
+    imgAlt="In-game screenshot"
+%}
+
+<!-- OpenGL Renderer -->
+{%  include project-card.html
+    title="OpenGL Renderer"
+    titleSize="text-4xl"
+    desc="This is a collection of various projects I've worked on when I begun 
+        learning about computer graphics and C++. The final result is kind of a goofy renderer. 
+        I had absolutely no idea about game engine's architecture or any experience in this 
+        field at that time and I was just following my intuition, thus the result is kinda goofy. 
+        But I was, and I still am, proud of what I've built from scratch."
+    year="2024"
+    link="https://github.com/Frol3z/OpenGL-Renderer"
+    linkText="Repo"
+    imgSrc="./assets/images/opengl_renderer.png"
+    imgAlt="Renderer screenshot"
+%}
