@@ -5,56 +5,63 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>About Me</title>
   </head>
-  <body class="flex flex-col min-h-screen">
-    <nav class="bg-fern-green h-16 flex items-center justify-around px-8">
-      <a href="/portfolio" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">ABOUT ME</a>
-      <a href="projects" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">PERSONAL PROJECTS</a>
-      <a href="things" class="text-cosmic-latte font-asimovian text-2xl hover:underline flex-1 text-center tracking-wider">FAVOURITE THINGS</a>
+  <body class="flex flex-col min-h-screen bg-palette-3">
+    <span class="h-1"></span>
+    <nav class="bg-palette-3 h-16 flex items-center justify-around px-8 shadow-sm m-8 hover:scale-102 transition-transform duration-300">
+      <a href="/portfolio" class="text-palette-5 font-primary text-2xl hover:underline flex-1 text-center tracking-wider">ABOUT ME</a>
+      <a href="projects" class="text-palette-5 font-primary text-2xl hover:underline flex-1 text-center tracking-wider">PERSONAL PROJECTS</a>
+      <a href="things" class="text-palette-5 font-primary text-2xl hover:underline flex-1 text-center tracking-wider">FAVOURITE THINGS</a>
     </nav>
 
-    <main class="bg-cosmic-latte flex-1 flex flex-col w-full">
-        <div class="aspect-square w-80 mx-auto mt-8">
-  <img src="./assets/images/me.gif" alt="just me" class="object-cover w-full h-full drop-shadow-lg">
+    <main class="flex-1 flex flex-col w-full">
+        <div class="aspect-square w-80 mx-auto mt-8 mb-8">
+  <img src="./assets/images/me.gif" alt="just me" class="object-cover w-full h-full drop-shadow-md">
 </div>
 
-<div class="mx-auto">
-  <h1 class="mt-8 text-6xl sm:text-7xl lg:text-5xl text-fern-green text-center font-asimovian drop-shadow-lg typewriter">
-    Hi, I'm Gabriele.
+<div class="mx-auto mt-16 px-4 font-primary flex flex-col justify-center items-center">
+  <!-- Scene heading -->
+  <h1 class="text-4xl text-palette-1 text-left">
+    INT. <span class="font-semibold">GABRIELE'S PORTFOLIO</span> – NIGHT
   </h1>
+
+  <!-- Action line -->
+  <p class="mt-4 text-2xl text-palette-5/80 typewriter text-center leading-snug">
+    The light flickers. Welcome, visitor.
+  </p>
 </div>
 
-<div class="mt-8 flex flex-row gap-20 w-full h-full p-8">
+<div class="mt-16 flex flex-row gap-20 w-full h-full p-12">
   
   <!-- ABOUT ME -->
-  <div class="flex-1">
-    <h1 class="font-asimovian text-4xl text-fern-green drop-shadow-2xl tracking-wider">About me</h1>
-    <div class="pt-5 pr-20 border-t-2 border-fern-green text-md text-black drop-shadow-sm font-source-code-pro">
-      <p class="tracking-normal">
+  <div class="flex-1 bg-palette-2 p-5 shadow-sm hover:scale-102 transition-transform duration-300">
+    <h1 class="font-primary text-4xl text-palette-1 tracking-wider">ABOUT ME</h1>
+    <div class="pt-5 pr-20 border-t-2 border-palette-1 text-md text-text-color/80 font-primary">
+      <p class="tracking-wide">
         I'm a computer science graduate student based in Turin, Italy. 
         I'm currently working on my bachelor's thesis and, alongside that, I often enjoy coming up with side projects to learn new things.
       </p><br>
-      <p class="tracking-normal">
+      <p class="tracking-wide">
         As of now, I'm learning the modern Vulkan API by developing a C++ framework that supports
         both the standard rasterization and raytracing pipeline, which I plan to use as a starting point for future projects.
         I have a particular interest in the field of computer graphics, which makes up most of my computer science projects.
       </p><br>
-      <p class="tracking-normal">Outside of computer science I enjoy studying film, learning Japanese and Danish, making music and improving my photography — whenever I can find the time.</p>
+      <p class="tracking-wide">Outside of computer science I enjoy studying film, learning Japanese and Danish, making music and improving my photography — whenever I can find the time.</p>
     </div>
   </div>
 
   <!-- RESUME -->
-  <div class="flex-1 text-right">
-    <h1 class="font-asimovian text-4xl text-fern-green drop-shadow-2xl tracking-wider">Résumé</h1>
-    <div class="pt-5 pl-20 border-t-2 border-fern-green text-lg text-black drop-shadow-2xl font-source-code-pro">
+  <div class="flex-1 text-right bg-palette-2 p-5 shadow-sm hover:scale-102 transition-transform duration-300">
+    <h1 class="font-primary text-4xl text-palette-1 tracking-wider">RÉSUMÉ</h1>
+    <div class="pt-5 pl-20 border-t-2 border-palette-1 text-lg text-text-color font-primary">
       
       <!-- Bachelor -->
       <div class="mb-6">
-        <h2 class="text-xl font-semibold tracking-wider text-fern-green font-asimovian">
-          University of Turin
+        <h2 class="text-xl font-semibold tracking-wider text-palette-1">
+          UNIVERSITY OF TURIN
         </h2>
-        <p class="text-sm text-gray-800">B.Sc. in Computer Science, 2021 - 2024</p>
+        <p class="text-sm text-text-color/50">B.Sc. in Computer Science, 2021 - 2024</p>
           <!-- 
-          <p class="text-sm text-black mt-1">
+          <p class="text-sm text-text-color mt-1">
             
           </p>
           -->
@@ -62,11 +69,11 @@
 
       <!-- Master -->
       <div>
-        <h2 class="text-xl font-semibold tracking-wider text-fern-green font-asimovian">
-          University of Turin
+        <h2 class="text-xl font-semibold tracking-wider text-palette-1">
+          UNIVERSITY OF TURIN
         </h2>
-        <p class="text-sm text-gray-800">(ongoing) M.Sc. in Computer Science, 2024 - 2026</p>
-          <p class="text-sm text-black mt-1">
+        <p class="text-sm text-text-color/50">(ongoing) M.Sc. in Computer Science, 2024 - 2026</p>
+          <p class="text-sm text-text-color/80 mt-1">
             I helped translating the Computer Graphics course slides from Italian to English as a part-time job.
           </p> 
       </div>
@@ -77,12 +84,19 @@
 </div>
     </main>
 
-    <footer class="bg-fern-green h-12 flex items-center justify-center font-source-code-pro text-cosmic-latte">
-        <span>© 2025 Gabriele Novello</span>
-        <span class="mx-4">|</span>
-        <a href="mailto:g.novello1006@gmail.com" class="font-semibold tracking-wider hover:underline">
-            CONTACTS
-        </a>
+    <footer class="h-auto p-4 flex flex-col gap-5 items-center justify-center font-primary text-palette-5 shadow-sm m-8 hover:scale-102 transition-transform duration-300">
+      <a href="mailto:g.novello1006@gmail.com" class="flex items-center gap-2 tracking-wider hover:underline">
+        <!-- CREDITS: Dazzle UI - Dazzle Line Icons -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="w-5 h-5">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier"> 
+            <path d="M20.9717 8C20.9717 8 16.9505 13 12.0005 13C7.05051 13 3.0293 8 3.0293 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#d4a373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> 
+          </g>
+        </svg>
+        <span class="text-xl -translate-y-[-1px]">CONTACTS</span>
+      </a>
+      <span class="text-sm text-palette-5/80">© 2025 Gabriele Novello. All rights reserved.</span>
     </footer>
+    <span class="h-1"></span>
   </body>
 </html>
