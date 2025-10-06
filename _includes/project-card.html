@@ -1,18 +1,18 @@
 <!-- CARD TEMPLATE -->
 <!-- Move mt-8 once I decide the layout of the rest of the page -->
-<div class="flex w-7xl h-full bg-fern-green mx-auto p-5 mt-8 mb-8 gap-5 drop-shadow-lg">
+<div class="flex w-7xl h-full bg-palette-3 mx-auto p-5 mt-8 mb-8 gap-5 drop-shadow-lg">
     <!-- Left column -->
     <div class="flex flex-col flex-1">
         <!-- Project title -->
         <div class="flex flex-2 flex-col justify-center p-4">
-            <h1 class="font-asimovian {{include.titleSize}} text-cosmic-latte drop-shadow-2xl text-center tracking-widest">{{include.title}}</h1>
+            <h1 class="font-primary {{include.titleSize}} text-palette-3 drop-shadow-2xl text-center tracking-widest">{{include.title}}</h1>
         </div>
         <!-- Project description -->
         <div class="flex flex-1 flex-col justify-end">
-            <p class="font-source-code-pro text-md leading-relaxed tracking-wider text-cosmic-latte drop-shadow-2xl text-justify p-3 border-t-1">
+            <p class="font-secondary text-md leading-relaxed tracking-wider text-palette-3 drop-shadow-2xl text-justify p-3 border-t-1">
                 {{include.desc}}
             </p>
-            <p class="font-source-code-pro text-md leading-relaxed tracking-wider text-cosmic-latte drop-shadow-2xl text-right p-3">
+            <p class="font-secondary text-md leading-relaxed tracking-wider text-palette-3 drop-shadow-2xl text-right p-3">
                 {{ include.year }}{% if include.linkText %}, {% endif %}
                 <a href="{{ include.link }}" target="_blank" rel="noopener" class="underline">
                     {{ include.linkText }}

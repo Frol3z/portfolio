@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Gabriela&display=swap');
 @import "tailwindcss";
 
 @theme {
-    --color-fern-green: #587042;
-    --color-sage: #A9B494;
-    --color-cosmic-latte: #FAF7E6;
-    --color-jasmine: #F8DE8C;
-    --color-saffron: #F6C531;
+    --color-palette-1: #b6c28f;
+    --color-palette-2: #e9edc9;
+    --color-palette-3: #fefae0; /* Background */
+    --color-palette-4: #faedcd;
+    --color-palette-5: #d4a373; /* Text */
+    --color-text-color: #3a3a3a;
     --font-pixelify-sans: "Pixelify Sans", sans-serif;
     --font-lato: "Lato", sans-serif;
-    --font-asimovian: "Asimovian", sans-serif;
-    --font-source-code-pro: "Source Code Pro", monospace;
+    --font-primary: "Courier Prime", monospace;
+    --font-secondary: "Gabriela", serif;
 }
 
 .typewriter {
+  display: inline-block;
   overflow: hidden;                 /* Ensures text doesn't wrap */
   white-space: nowrap;              /* Keep text on one line */
-  border-right: 0.1em solid #587042; /* cursor effect */
+  border-right: 0.1em solid #d4a373; /* cursor effect */
   animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { width: 0ch; }
+  to { width: 38ch; }
 }
 
 @keyframes blink {
