@@ -1,0 +1,29 @@
+---
+layout: default
+title: Writings
+---
+
+<div class="mt-8 mb-8 sm:px-120 mx-auto w-full py-8 sm:py-16 px-4 font-primary flex flex-col gap-12">
+
+  <!-- Page heading -->
+  <div class="text-center">
+    <p class="text-palette-5/80 text-sm sm:text-lg">
+      A collection of my thoughts.
+    </p>
+  </div>
+
+  <!-- Posts list -->
+  <div class="flex flex-col gap-6">
+    {% for post in site.posts %}
+      <article class="flex flex-col p-6 bg-palette-2 shadow-sm hover:scale-102 transition-transform duration-300 border-l-4 border-palette-1">
+        <h2 class="text-2xl font-semibold text-palette-1 tracking-wider mb-1">
+          <a href="{{ post.url }}" class="hover:underline">{{ post.title }}</a>
+        </h2>
+        <p class="text-palette-5/70 text-sm mb-3">{{ post.date | date: "%B %d, %Y" }}</p>
+        <div class="text-text-color/80 text-sm">
+          {{ post.excerpt }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

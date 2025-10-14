@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="mt-12 mb-12 sm:px-16 px-4 mx-auto w-full max-w-4xl py-8 sm:py-16 font-primary text-text-color flex flex-col gap-10">
+  <!-- Post header -->
+  <header class="text-center">
+    <h1 class="text-4xl sm:text-5xl text-palette-1 tracking-wider mb-2">{{ page.title }}</h1>
+    <p class="text-sm sm:text-base text-palette-5/70">{{ page.date | date: "%B %d, %Y" }}</p>
+  </header>
+
+  <!-- Post content -->
+    <div class="mt-6 flex flex-col gap-6 text-text-color/80 max-w-full text-center">
+        {{ content }}
+    </div>
+</div>
