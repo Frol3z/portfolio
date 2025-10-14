@@ -22,7 +22,7 @@ jobs:
       - run: npm install             # 4b. Install Node dependencies
 
       - run: npx tailwindcss -i ./assets/css/style.css -o ./assets/css/main.css --minify   # 5. Build Tailwind
-      - run: bundle exec jekyll build --baseurl ""                                       # 6. Build Jekyll
+      - run: bundle exec jekyll build --baseurl "/portfolio"                                       # 6. Build Jekyll
 
       - uses: peaceiris/actions-gh-pages@v3   # 7. Deploy to GitHub Pages
         with:
