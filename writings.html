@@ -17,7 +17,7 @@ title: Writings
     {% for post in site.posts %}
       <article class="flex flex-col p-6 bg-palette-2 shadow-sm hover:scale-102 transition-transform duration-300 border-l-4 border-palette-1">
         <h2 class="text-2xl font-semibold text-palette-1 tracking-wider mb-1">
-          <a href="{{ post.url }}" class="hover:underline">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}" class="hover:underline">{{ post.title }}</a>
         </h2>
         <p class="text-palette-5/70 text-sm mb-3">{{ post.date | date: "%B %d, %Y" }}</p>
         <div class="text-text-color/80 text-sm">
