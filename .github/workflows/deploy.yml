@@ -9,22 +9,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3   # 1. Download repo
-      - uses: ruby/setup-ruby@v1    # 2. Install Ruby for Jekyll
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1 # Ruby
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      - uses: actions/setup-node@v3 # 3. Install Node for Tailwind
+      - uses: actions/setup-node@v3 # Tailwind
         with:
           node-version: '18'
 
-      - run: bundle install          # 4a. Install Ruby dependencies
-      - run: npm install             # 4b. Install Node dependencies
+      - run: bundle install
+      - run: npm install
 
-      - run: npx tailwindcss -i ./assets/css/style.css -o ./assets/css/main.css --minify   # 5. Build Tailwind
-      - run: bundle exec jekyll build --baseurl "/portfolio"                                       # 6. Build Jekyll
+      - run: npx tailwindcss -i ./assets/css/style.css -o ./assets/css/main.css --minify # Compile Tailwind
+      - run: bundle exec jekyll build --baseurl "/portfolio" # Build Jekyll
 
-      - uses: peaceiris/actions-gh-pages@v3   # 7. Deploy to GitHub Pages
+      - uses: peaceiris/actions-gh-pages@v3 # Deploy to GitHub Pages
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./_site
