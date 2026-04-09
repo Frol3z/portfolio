@@ -5,9 +5,9 @@
 @theme {
     --color-palette-1: #b6c28f;
     --color-palette-2: #e9edc9;
-    --color-palette-3: #fefae0; /* Background */
+    --color-palette-3: #fefae0;
     --color-palette-4: #faedcd;
-    --color-palette-5: #d4a373; /* Text */
+    --color-palette-5: #d4a373;
     --color-text-color: #3a3a3a;
     --font-pixelify-sans: "Pixelify Sans", sans-serif;
     --font-lato: "Lato", sans-serif;
